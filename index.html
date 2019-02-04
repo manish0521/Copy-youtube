@@ -22,25 +22,39 @@
         
             </div>
        
-        <div class="header">
-            <img class="logo" src= "./assets/movies logo.png">
-            <table class="top-links">
+            
+            <div class="logo"><img src= "./assets/movies logo.png">
+                    <div> 
+                    <h3>Movies & Shows</h3>
+                    <p>Watch the Latest and greatest hits</p>
+                    </div>
+                    <button type="submit" >Subscribe</button>
+    
+            </div>
+            
+            <div table class="top-links">
                 <tr class="movies-shows">
                     <td><a href=>Movies</a></td>
                     <td><a href=>Shows</a></td>
                 </tr>
-            </table>
-            <h3> Movies & Shows</h3>
-            <h5>Watch the Latest and greatest hits</h5>
-
-            <button type="submit" >Subscribe</button>
-
-     </div>
-     
-     <div class="main_container">
-            <div class="header">
-                Cute Dog Pictures
+                </table>
             </div>
+
+            
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">All Genres</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="Kids">Kids</a>
+                    <a href="Animation">Animation</a>
+                    <a href="Action">Action</a>   
+                </div>
+                </div>
+                <script>
+                        function myFunction() {
+                            document.getElementById("myDropdown").classList.toggle("show");
+                          }
+                </script>
+                
             <div class="content_container">
                 <div class="nav">
                     <div>1</div>
@@ -60,7 +74,7 @@
             </div>
             <div class="footer">
                 <div>footer</div>
-            </div>
+            
         </div>
         
 
