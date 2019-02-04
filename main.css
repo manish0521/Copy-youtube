@@ -80,15 +80,18 @@
 .dropbtn {
     background-color:whitesmoke;
     color: black;
-    padding: 10px;
+    padding: 20px;
+    
     font-size: 16px;
     border: none;
     cursor: pointer;
+   
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
+   
   }
   
   .dropdown-content {
@@ -112,10 +115,70 @@
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
+.top-links {
+    padding: 20px;
+    margin-top: 20px;
+}
+.new {
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 17pt;
+    color: black;
+}
+
 .new-release {
+    padding: 20px;
+    margin-top: 20px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+    color: black;
+    justify-content: left;
     
+    
+}
+
+#new-release{
+    display: grid;
+    grid-template: 1fr 3fr 1fr;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 20px;
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.free{
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 17pt;
+    color: black;
+}
+
+
+.free-movies{
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: black;
+    justify-content: left;
+}
+
+#free-movies{
+    display: grid;
+    grid-template: 1fr 3fr 1fr;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 20px;
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    
+
 }
