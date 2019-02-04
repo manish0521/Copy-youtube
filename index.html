@@ -43,25 +43,40 @@
             
                 <div class="dropdown">
                     <button onclick="myFunction()" class="dropbtn">All Genres</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="Kids">Kids</a>
-                    <a href="Animation">Animation</a>
-                    <a href="Action">Action</a>   
-                </div>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="Kids">Kids</a>
+                        <a href="Animation">Animation</a>
+                        <a href="Action">Action</a>
+                        <a href="Sports">Sports</a>
+                        <a href="Drama">Drama</a>
+                    </div>
                 </div>
                 <script>
                         function myFunction() {
                             document.getElementById("myDropdown").classList.toggle("show");
                           }
+                    // Close the dropdown if the user clicks outside of it
+                        window.onclick = function(event) {
+                        if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                            }
+                            }
+                        }
+
                 </script>
                 
-            <div class="content_container">
-                <div class="nav">
-                    <div>1</div>
-                    <div>2</div>
-                </div>
+            
                 <div class="content">
-                    <div><img src="./assets/dog1.jpg"> </div>
+                    <div>
+                        <img href="https://i.ytimg.com/vi_webp/lYqPAl5AZOE/movieposter.webp">
+                    
+                    </div>
                     <div><img src="./assets/dog2.jpg"></div>
                     <div><img src="./assets/dog3.jpeg"></div>
                     <div><img src="./assets/dog4.jpg"></div>
